@@ -1,0 +1,54 @@
+$gradient-first-color: rgba(112, 60, 38, 0.85);
+$gradient-second-color: rgba(66, 76, 83, 0.85);
+
+$light-text: #ffffff;
+$dark-text: #383838;
+$color-important: #e75333;
+
+$montserrat: "Montserrat", "Arial", sans-serif;
+
+@mixin main-gradient ($degs) {
+  background-image: linear-gradient($degs, $gradient-first-color 13.28%, $gradient-second-color 85.15%);
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin text-block-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin media-tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin h2-heading {
+  color: $light-text;
+  font-family: $montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+
+  @include media-tablet {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @include media-mobile {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

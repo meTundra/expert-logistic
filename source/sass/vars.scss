@@ -7,10 +7,6 @@ $color-important: #e75333;
 
 $montserrat: "Montserrat", "Arial", sans-serif;
 
-@mixin main-gradient ($degs) {
-  background-image: linear-gradient($degs, $gradient-first-color 13.28%, $gradient-second-color 85.15%);
-}
-
 @mixin list-reset {
   list-style: none;
   padding-left: 0;

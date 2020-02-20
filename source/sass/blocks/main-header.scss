@@ -1,0 +1,72 @@
+.main-header {
+  &__content {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    width: 132px;
+    height: 120px;
+    background-color: #ffffff;
+
+    @include media-tablet {
+      height: 31px;
+      background: none;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 54px;
+  }
+
+  &__nav {
+    margin-right: 50px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    color: $light-text;
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__button {
+    width: 32px;
+    height: 18px;
+    border: none;
+    background: none;
+    background-image: url("../img/svg/icon-burger.svg");
+    background-position: center;
+  }
+}
